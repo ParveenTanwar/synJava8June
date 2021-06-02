@@ -13,7 +13,28 @@ Lab 1 - Start with demo2.zip
 		public List<T> getList();
 	}
 	Write DeptDAO and EmpDAO with minimum code (only getList method ) and check 
-
+	Further modify Dao interface to add delete method
+	import java.util.List;
+	import java.util.function.Predicate;
+	// First T- pojo, t1 - pk type of pojo
+	public interface Dao<T, T1> {
+		public default void create(T t) {
+			System.out.println("DAO Interface - Create " + t);
+			getList().add(t);
+		}
+		public List<T> getList();
+		public default void delete(Predicate<T> pred) {
+			System.out.println("in delete of DAO with " + pred);
+			getList().removeIf(pred);
+		}
+		public void update(T newtype);
+	}
+	To invoke 
+		//dao.delete((d)->d.getDeptno()==20);
+		dao.update(new Dept(10,"HR", "Pnq"));
+		dao.delete((d)->d.getLoc().equalsIgnoreCase("HYD"));
+	
+	Write DeptDao and EmpDAo code to check
 ------------------------------------------------------------------------------------------------------------------------------
 Demo1 Project 
 Lab 1 - Lab1.java
