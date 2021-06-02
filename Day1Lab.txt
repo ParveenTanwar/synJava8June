@@ -1,11 +1,42 @@
-Lab 1 - Demo1 Project 
-  Lab1 class -> create a new class to create an instance of thread by passing runnable
-                create a helper class to implement runnable
-                  Check number of lines of code
-                  
-                Replace runnable instance creation with lambda expression
-                  Runnable r = () -> {
-			            		};
-                Reduce further for single liner
-                  Runnable r = ()->...;
-                  
+Demo1 Project 
+Lab 1 - Lab1.java
+   create a new class to create an instance of thread by passing runnable
+	create a helper class to implement runnable
+	  Check number of lines of code
+
+	Replace runnable instance creation with lambda expression
+	  Runnable r = () -> {
+					};
+	Reduce further for single liner
+	  Runnable r = ()->...;
+
+Lab 2 - Lab2.java ( functional interface can have SAM)
+   create a new interface Calc with only one add method accepting two int args and return int
+   Create a new class to create instance of Calc 
+   	main(){
+		Calc c =  (int i, int j) -> {	
+			return i+j;
+		};
+		OR
+		Calc c = (x,y)->x+y;
+	
+	Test it
+  modify Calc interface to add one more abstract method
+  	Observe error on main for lambda init
+  	delete abstract method
+  modify Calc interface to add @FunctionalInterface annotation for class
+  	modify Calc interface to add one more abstract method
+  	Observe error for that interface
+  	delete abstract method
+   
+Asgn 1 - Use the interface MyIntBinaryTest
+		interface MyIntBinaryTest{
+			public int op(int, int)
+		}
+
+	Interface Calc
+		public int process(MyIntBinaryTest)
+		{
+		
+		}
+	Main method to test the calls
