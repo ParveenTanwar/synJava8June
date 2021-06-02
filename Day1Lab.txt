@@ -57,3 +57,30 @@ Lab 3 - Lab3.java
 		Can you think of any other interface which can use default
 		
 	
+Lab 4 - Lab4.java 
+	Static Implementation in interface
+	Create a interface with 1 abstract methods
+		and 1 method with code 
+		Observe error -> 3 options (no code, make static or make default)
+		modify that method to static
+	Write two impl classes
+		
+	main
+		create instance and invoke it
+		invoke static method from main and also from implementation classes
+	
+Lab 5 - Lab5.java
+	Create interface Connection with two methods open and close 
+	Create interface Transaction with two methods open and commit
+	Write DeptDAO implements Connection , Transaction
+	main -> test the calls
+		Create DeptDAO instance and check which methods can be called
+		Create Connection interface with DeptDAO instance and check
+		Create Transaction interface with DeptDAO instance and check
+		
+	Change open of Connection to default method
+		Run - check...
+	Change open of Transaction to default method
+		Observe
+		
+	
