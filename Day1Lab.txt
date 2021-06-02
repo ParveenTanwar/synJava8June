@@ -1,3 +1,10 @@
+Demo2 Project
+Lab 1 - Start with demo2.zip
+	extract...
+	Need to Redesign the current code with new java 1.8 interfaces.
+
+
+------------------------------------------------------------------------------------------------------------------------------
 Demo1 Project 
 Lab 1 - Lab1.java
    create a new class to create an instance of thread by passing runnable
