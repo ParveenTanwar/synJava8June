@@ -3,24 +3,17 @@ Lab 1 - Start with demo2.zip
 	extract...
 	Need to Redesign the current code with new java 1.8 interfaces.
 
-	Design
-		common code -> default
-			Create
-				getList().add
-			Read
+	import java.util.List;
 
-		List getList();
-		delete(DeleteCheck)
-
+	public interface Dao<T> {
+		public default void create(T t) {
+			System.out.println("DAO Interface - Create " + t);
+			getList().add(t);
 		}
-	---------------
-	DeptDAO , EmpDAO -> Common Interface -> Create(Dept/Emp)
-							Generics in Interface
-	-----------------
-	Interface DeleteCheck
-	{
-		bool condition(int, int)
+		public List<T> getList();
 	}
+	Write DeptDAO and EmpDAO with minimum code (only getList method ) and check 
+
 ------------------------------------------------------------------------------------------------------------------------------
 Demo1 Project 
 Lab 1 - Lab1.java
