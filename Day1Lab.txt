@@ -1,0 +1,11 @@
+Lab 1 - Demo1 Project 
+  Lab1 class -> create a new class to create an instance of thread by passing runnable
+                create a helper class to implement runnable
+                  Check number of lines of code
+                  
+                Replace runnable instance creation with lambda expression
+                  Runnable r = () -> {
+			            		};
+                Reduce further for single liner
+                  Runnable r = ()->...;
+                  
