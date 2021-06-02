@@ -3,7 +3,24 @@ Lab 1 - Start with demo2.zip
 	extract...
 	Need to Redesign the current code with new java 1.8 interfaces.
 
+	Design
+		common code -> default
+			Create
+				getList().add
+			Read
 
+		List getList();
+		delete(DeleteCheck)
+
+		}
+	---------------
+	DeptDAO , EmpDAO -> Common Interface -> Create(Dept/Emp)
+							Generics in Interface
+	-----------------
+	Interface DeleteCheck
+	{
+		bool condition(int, int)
+	}
 ------------------------------------------------------------------------------------------------------------------------------
 Demo1 Project 
 Lab 1 - Lab1.java
