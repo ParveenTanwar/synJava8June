@@ -40,3 +40,20 @@ Asgn 1 - Use the interface MyIntBinaryTest
 		
 		}
 	Main method to test the calls
+
+Lab 3 - Lab3.java 
+	Default Implementation in interface
+	Create a interface with 1 abstract methods
+		and 1 method with code 
+		Observe error -> 3 options (no code, make static or make default)
+		modify that method to default
+	Write two impl classes
+		1. override default method
+		1. without default method
+	main
+		instance and invoke it.
+	
+	Think (modify MouseListener to provide default implemention
+		Can you think of any other interface which can use default
+		
+	
