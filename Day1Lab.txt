@@ -1,4 +1,9 @@
+Modify daos for increased list size and connect from two tools
+	jconsole, jvisualvm
+	(cmd prompt> set path=c:\..jdk\bin)
+	
 Demo2 Project
+
 Lab 1 - Start with demo2.zip
 	extract...
 	Need to Redesign the current code with new java 1.8 interfaces.
