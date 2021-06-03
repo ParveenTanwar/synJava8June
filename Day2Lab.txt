@@ -5,10 +5,17 @@ Lab1 - Create and print instnace of java.util.Date
        	compile with -profile compact1 option -> error
 	compile with -profile compact2 option -> success
 
-	java -verbose:gc Lab1 (CLassLoaders)
+	java -verbose:class Lab1 (CLassLoaders) 
 	
-
-
+	Jdeps 
+		jdeps Lab1.class 
+		jdeps .
+	
+		-s, -v
+	running this on any existing class
+		
+Lab 2 = Date and Time API
+	Accept year, month and date from user and create Date Object
 ---------------------------------------------	
 Demo 3- 
 Asgn 1 - (demo3)
