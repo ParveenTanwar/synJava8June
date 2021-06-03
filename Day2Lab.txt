@@ -1,4 +1,14 @@
-Demo 3- Lab1.java 
+Demo 3- 
+Asgn 1 - (demo3)
+	Create a list of 10 emps, 
+		1. modify all employees to have  salary = 1000
+		2. modify employees where salary > 2000, salary += 10% of salary
+		3. Filter (Predicate)
+			Show records satisfying that condition
+			
+---------------------------------------------			
+
+Lab1.java 
 Lab 1 - 
   Consumer, Function, Operator,Predicate, Supplier
 
