@@ -1,3 +1,15 @@
+Demo 4 
+Lab1 - Create and print instnace of java.util.Date
+	compile with -profile compact1 option
+       modify java file to include java.sql.Date
+       	compile with -profile compact1 option -> error
+	compile with -profile compact2 option -> success
+
+	java -verbose:gc Lab1 (CLassLoaders)
+	
+
+
+---------------------------------------------	
 Demo 3- 
 Asgn 1 - (demo3)
 	Create a list of 10 emps, 
