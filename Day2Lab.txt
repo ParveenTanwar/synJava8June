@@ -12,3 +12,15 @@ Lab 1 -
     8. String concat(String, String)
     9. void process(Dept d) -> insert a record in table
     10. bool checkOdd(int)
+
+Lab 2 -Lab2.java single line vs multiline
+	impact of return on both
+		
+		BinaryOperator<String> concat = (i, j) -> i + j;
+		 concat = (i,j)->{ return i+j; };
+Lab 3 -Lab3.java  Variable declaration in lambda
+	New variable -> read/write
+	Variable outside scope
+		Final or effectively final
+	Static Calls to functions
+	list.forEach(System.out::println);
