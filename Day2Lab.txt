@@ -1,0 +1,14 @@
+Demo 3- Lab1.java 
+Lab 1 - 
+  Consumer, Function, Operator,Predicate, Supplier
+
+    1. int sqr(int)
+    2. double sqr(double)
+    3. int add(int , int)
+    4. double divide(String, String)
+    5. void print(String )
+    6. int random()
+    7. double getSalary(Emp)
+    8. String concat(String, String)
+    9. void process(Dept d) -> insert a record in table
+    10. bool checkOdd(int)
