@@ -31,8 +31,26 @@ Lab 3 - Optional demo
 		return Optional.empty();
 		}
 		}
+Lab 4 - Nashorn engine
+		import javax.script.ScriptEngine;
+		import javax.script.ScriptEngineManager;
+		import javax.script.ScriptException;
 
+		public class Lab4 {
+			public static void main(String[] args) throws Exception {
+				ScriptEngineManager factory = new ScriptEngineManager();
+				ScriptEngine engine = factory.getEngineByName("nashorn");
+				try {
+					engine.eval("print('Hello, World!');");
+				} catch (final ScriptException se) {
+					se.printStackTrace();
+				}
+			}
+		}
 
+	Create a js file in src folder
+	Modify code to run the file
+	
 ---------------------------------------------	
 Demo 3- 
 Asgn 1 - (demo3)
