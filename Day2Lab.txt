@@ -16,6 +16,23 @@ Lab1 - Create and print instnace of java.util.Date
 		
 Lab 2 = Date and Time API
 	Accept year, month and date from user and create Date Object
+	
+Lab 3 - Optional demo
+	Write Lab3 to test the code and check the return values
+	class Lab3Helper {
+		private List<String> l1 =  Arrays.asList("Vaishali","Simran", "Vasanti");
+	
+		public Optional<Integer> find(String str) //throws Exception
+		{
+			for (int i = 0; i < l1.size(); i++) {
+				if (l1.get(i).equals(str))
+				return Optional.of(i);
+		}
+		return Optional.empty();
+		}
+		}
+
+
 ---------------------------------------------	
 Demo 3- 
 Asgn 1 - (demo3)
