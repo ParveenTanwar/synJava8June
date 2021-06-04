@@ -85,3 +85,12 @@ Lab 6 - Map + FlatMap
 	Create stream of list of list of strings
 		convert using map + flatmap
 		
+Lab 7 - reduce
+		Stream<Integer> strint = Stream.of(10,50,3,4,2,1);
+		List<String> names = Arrays.asList("Vaishali","Sonali","Saloni","Vishal","Zarin","Mahesh","Mahi");
+		
+		Integer i = strint.reduce(0,(a,b)->a+b);
+		System.out.println("Sum = " + i);
+		String str= names.stream().reduce("_",(a,b)->a+b);
+		System.out.println("Names Reduce = " + str);
+
