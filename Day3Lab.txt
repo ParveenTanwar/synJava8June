@@ -40,3 +40,17 @@ Lab 2 - Lab2.java
                                                 salary between ..
                                                 project - proj1 or proj2
                                                 
+Lab 3 - lab3.java 
+	List<Emp> empList = Data.list(50);
+		/*empList.stream().filter(e -> e.getProject().equals("proj2"))
+				.peek(e -> System.out.println("After first filter" + e)).filter(e -> e.getEname().equals("Sonali"))
+				.forEach(e -> System.out.println("After second filter" + e));
+				
+				*/
+		Optional<Emp> optemp = empList.stream().filter(e -> e.getProject().equals("proj2"))
+		.peek(e -> System.out.println("After first filter" + e)).filter(e -> e.getEname().equals("Sonali"))
+		.findFirst();
+		if (optemp.isPresent())
+			System.out.println("Emp returned "+ optemp);
+			
+	Run - > short circuiting/ terminal/ peek (debug)
