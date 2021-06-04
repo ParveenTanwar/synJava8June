@@ -54,3 +54,8 @@ Lab 3 - lab3.java
 			System.out.println("Emp returned "+ optemp);
 			
 	Run - > short circuiting/ terminal/ peek (debug)
+
+Lab 4 - pagenation
+	Show only 5 records, give option - N/ P 
+	limit, skip
+	
