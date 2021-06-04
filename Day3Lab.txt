@@ -1,0 +1,9 @@
+Project Demo5 
+Lab 1 - Create lab1.java
+    Create stream -  Stream.of(10,50,31,55,7,44);
+    use foreach to print 
+    Create stream -  from list - list.stream()
+    use foreach to print 
+    
+    try processing same stream twice
+    
