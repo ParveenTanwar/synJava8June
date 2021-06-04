@@ -73,3 +73,15 @@ Lab 5 - min, max, distinct
 		
 		Sorting -> sort employee data based on projects 
 						       salary
+
+Lab 6 - Map + FlatMap
+		int[] arr =  {10,50,31,5};
+		int[] arr1 =  {11,22};
+		Stream.of(arr,arr1).forEach(e->System.out.println(Arrays.toString(e)));
+		System.out.println("-----------------Print Length--------------------");
+		Stream.of(arr,arr1).map(ar->ar.length).forEach(System.out::println);
+		System.out.println("-----------Output of Flat Map");
+		Stream.of(arr,arr1).flatMapToInt(ar->IntStream.of(ar)).forEach(System.out::println);
+	Create stream of list of list of strings
+		convert using map + flatmap
+		
