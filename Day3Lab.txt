@@ -59,3 +59,17 @@ Lab 4 - pagenation
 	Show only 5 records, give option - N/ P 
 	limit, skip
 	
+Lab 5 - min, max, distinct
+		int[] arr =  {10,50,31,55,7,44, 55};
+		int[] arr1 =  {11,22,33};
+		System.out.println("Count = " + Stream.of(arr,arr1).count());
+		System.out.println("Count = " + IntStream.of(arr).count());
+		
+		System.out.println("Min = " +  	IntStream.of(arr).min().getAsInt());
+		System.out.println("Max = " +  	IntStream.of(arr).max().getAsInt());
+		System.out.println("Distinct..");
+		
+		Print min / max of salary from Employee data
+		
+		Sorting -> sort employee data based on projects 
+						       salary
