@@ -1,3 +1,17 @@
+Project Demo6 - collectors and parallel
+Lab 1 +2 -> Collect the data in list
+	
+	List<Emp> filtered = list.stream().filter(e->e.getEname().equals("Mahi")).collect(Collectors.toList());
+		
+	Grouping - 	Map<String, List<Emp>> empbyproject = 
+					list.stream().collect(Collectors.groupingBy(Emp::getProject));
+					//list.stream().collect(Collectors.groupingBy(e->e.getProject()));	
+		
+Lab 3 
+	Higher number of records -> observe time taken
+		1. Single Thread (stream)
+		2. Multiple Thread(parallelStream)
+----------------------------------------------------
 Project Demo5 
 Lab 1 - Create lab1.java
     Create stream -  Stream.of(10,50,31,55,7,44);
