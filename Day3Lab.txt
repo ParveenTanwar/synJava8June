@@ -7,3 +7,36 @@ Lab 1 - Create lab1.java
     
     try processing same stream twice
     
+Lab 2 - Lab2.java
+        Create list of Emp - 	private int empno;
+	                            private String ename;
+	                            private double salary;
+	                            private String project;
+        public static List<Emp> list(int no ){
+                List<String> projects = Arrays.asList("proj1","proj2","proj3");
+                List<String> names = Arrays.asList("Vaishali","Sonali","Saloni","Vishal","Zarin","Mahesh","Mahi");
+
+
+                List<Emp> list = new ArrayList<Emp>();
+                for (int i = 1;i<=no;i++) {
+                    Emp e = new Emp();
+                    e.setEmpno(i);
+                    e.setEname(names.get(i%7));
+                    e.setProject(projects.get(i%3));
+                    e.setSalary(i *(int)( Math.random()*1000));
+                    list.add(e);
+                }
+                return list;
+            }
+
+    Stream<Integer> strint = Stream.of(10,50,31,55,7,44);
+	List<String> names = Arrays.asList("Vaishali","Sonali","Saloni","Vishal","Zarin","Mahesh","Mahi");
+
+    Filter -> number > < = 
+              number  between x and y
+              str -> starts , end , contains, strlenght >= 5
+
+              emp data -> show all employees where name = Saloni
+                                                salary between ..
+                                                project - proj1 or proj2
+                                                
